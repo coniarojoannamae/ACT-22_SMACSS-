@@ -1,0 +1,28 @@
+<!-- State.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal and Button Example</title>
+    <link rel="stylesheet" href="style.css"> <!-- link to your CSS file -->
+</head>
+<body>
+    <button class="btn is-active">Active Button</button>
+    <button class="btn">Inactive Button</button>
+
+    <div class="modal is-open">
+        <h2>Modal Title</h2>
+        <p>This is a sample modal content.</p>
+        <button class="btn">Close Modal</button>
+    </div>
+
+    <div class="modal is-closed">
+        <h2>Hidden Modal Title</h2>
+        <p>This is a sample hidden modal content.</p>
+        <button class="btn">Close Hidden Modal</button>
+    </div>
+
+    <button class="btn" onclick="document.querySelector('.modal.is-closed').classList.remove('is-closed'); document.querySelector('.modal.is-closed').classList.add('is-open');">Show Hidden Modal</button>
+</body>
+</html>
